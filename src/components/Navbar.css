@@ -1,0 +1,91 @@
+/* Basic Navbar Styles */
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Navbar items */
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hamburger menu for small screens */
+  .hamburger {
+    display: none;
+    font-size: 20px;
+    color: white;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  /* When the menu is open, the links will be displayed as a vertical column */
+  .menu.open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    width: 250px;
+    height: fit-content;
+    display: none; /* Default to hidden */
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+  
+  .menu.open .nav-links {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu.open .nav-links li {
+    margin-bottom: 20px;
+  }
+  
+  /* Hide the menu and show hamburger button for small screens */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide navbar items on small screens by default */
+    }
+  
+    .hamburger {
+      display: block; /* Show hamburger on small screens */
+    }
+  
+    .menu.open {
+      display: flex; /* Show menu on small screens when open */
+    }
+  }
+  

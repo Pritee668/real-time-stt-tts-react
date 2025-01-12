@@ -1,0 +1,86 @@
+.AppM {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  background-color:	 #f2ccff ;
+ overflow: hidden;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:	 	 	 #39004d;
+  padding: 1rem;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: 3px groove #d966ff;
+  background-color:  #df80ff;
+
+}
+nav ul li a:hover{
+  background-color: 	 #d966ff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin-top: 4rem; /* Adjust this value if needed */
+}
+
+button {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: 3px groove #d966ff;
+  background-color:  #df80ff;
+}
+button:hover{
+  background-color: 	 #d966ff;
+}
+.containerH{
+  background: linear-gradient(to top, #df80ff,  	 #f2ccff);
+  padding: 50px 80px;
+  border-radius: 0 80px 0 80px ;
+}
+.upperContainer{
+  background: linear-gradient(to top,  #d24dff,   #ecb3ff);
+  padding: 50px 150px 100px 150px;
+  border-radius: 0 80px 0 80px ;
+}
+.para{
+  font-size: 30px;
+  font-weight: bolder;
+
+
+}
