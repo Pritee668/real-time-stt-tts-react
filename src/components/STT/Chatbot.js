@@ -43,7 +43,7 @@ function Chatbot() {
 
     try {
       const response = await axios({
-        url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyAN0TR8b5sSOHhn_RBQlkhGYYpDXYnCI0Y",
+        url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyDZqjOHId1pnRr_f1-h7NzaWn_TVhmqqHM",
         method: "post",
         data: {
           contents: [{ parts: [{ text: question }] }],
