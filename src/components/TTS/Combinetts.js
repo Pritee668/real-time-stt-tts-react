@@ -100,7 +100,7 @@ import Nabvar from '../Navbar';
       document.body.appendChild(toast);
       setTimeout(() => toast.remove(), 3000);
     };
-      const apiKey = "AIzaSyDZqjOHId1pnRr_f1-h7NzaWn_TVhmqqHM;
+      const apiKey = "AIzaSyDZqjOHId1pnRr_f1-h7NzaWn_TVhmqqHM";
       const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
     
   const fetchAnswer = async (query) => {
